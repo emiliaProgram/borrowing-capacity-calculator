@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Borrowing Capacity Calculator</title>
+<link rel="stylesheet" href="style.css">
+<script src="calculate.js"></script>
+</head>
+<body>
+
+<h2>Borrowing Capacity Calculator</h2>
+
+<form id="borrowingCapacityForm">
+  <label for="grossIncome">Gross Income (Annual):</label><br>
+  <input type="number" id="grossIncome" name="grossIncome"><br>
+  
+  <label for="monthlyExpenses">Monthly Expenses:</label><br>
+  <input type="number" id="monthlyExpenses" name="monthlyExpenses"><br>
+  
+  <label for="otherCommitments">Other Financial Commitments (Monthly):</label><br>
+  <input type="number" id="otherCommitments" name="otherCommitments"><br><br>
+  
+  <input type="button" value="Calculate" onclick="calculateBorrowingCapacity()">
+</form> 
+
+<p id="result"></p>
+
+</body>
+</html>
